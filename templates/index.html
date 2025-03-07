@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Signup Form</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body><p>
+        Hi, welcome to the Signup Page</p>
+        <p>
+            Today is a {{ day_of_the_week }}
+        </p>
+     <div class="centred">
+        <form action="/submit" method="post">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <br>
+            <label for="email">email</label>
+            <input type="email" name ="email" id="email" pleaceholder="enter your email">
+            <br>
+            <label for="password">password</label>
+            <input type="password" name ="password" id="password" pleaceholder="enter your password">
+            <br>
+            <input type="submit" value="submit">
+
+        </form>
+    </div>
+    </body>
+    <style>
+        body {
+            background-color: blue;
+        }
+        p {
+            text-align: center;
+            font-size: 1000;
+            font-family: 'Times New Roman', Times, serif;
+            color: yellow;
+
+        }
+        .centred {
+            margin: auto;
+            width: 50%;
+            border: 3px solid green;
+            padding: 10px;
+
+        }
+    
+    </style>
+    
+</html>
